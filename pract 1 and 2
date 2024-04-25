@@ -1,0 +1,11 @@
+1. open power bi
+2. in home panel -> get data-> Odatafeed
+3. enter url-> http://services.odata.org/Northwind/Northwind.svc/
+4. select orders and products then load
+5. In table view-> data panel-> select any table: right click then select querry editor
+6. inside querry editor->select product table-> select ProductID, QuantityPerunit & unit price (hold ctrl while selecting)
+7. then remove other column
+8. in order table-> order details cloumn cell(on the right) icon(click)-> deselect all items then-> select ProductID, unitPrice & Quantity
+9. add cloumn panel-> custom column->in name field: Line Total ->in frmula-> select unit price multipy quamtity then ok
+10. then close and apply 
+11. in home panel -> report view-> select any visualization
