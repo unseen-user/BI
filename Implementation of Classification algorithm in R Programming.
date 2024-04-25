@@ -1,0 +1,5 @@
+rain <-c (800,178.90,600,650.89,200,598.76,300.55,890.98,798.54,100,760.11,546.98)
+print(rain)
+timeseries <- ts(rain ,start = c(2014,3),frequency = 12)
+print(timeseries)
+plot(timeseries)
