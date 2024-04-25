@@ -1,0 +1,16 @@
+a<-c(21,54,77,86,34,90,77,13,54)
+b<-c(76,33,76,12,44,76,98,21,67)
+relation<-lm(b~a)
+print(relation)
+
+print(summary(relation))
+
+x<-data.frame(b=70)
+result<-predict(relation,x)
+
+print(result)
+
+png(file="linear2.png")
+
+plot(b,a,col="blue",main="heightand width relation",abline(lm(a~b)),cex=1.3,pch=16,xlab="Width in kg",ylab="Height in cm")
+dev.off()
