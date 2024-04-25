@@ -1,0 +1,6 @@
+install.packages("party")
+library(party)
+head(readingSkills)
+i<-readingSkills[c(1:50),]
+o<-ctree(nativeSpeaker~age + score + shoeSize,data=i)
+plot(o)
